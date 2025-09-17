@@ -91,33 +91,6 @@ img{
     display: flex;
 }
 
-.showcase{
-  .container{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    width: 75%;
-    margin: auto;
-  }
-}
-
-.col{width: calc((100% - 2rem) / 3);
-}
-.card{
-
-  img.back{
-  display: none;
-  }
-
-  &:hover img.front{
-    display: none;
-  }
-
-  &:hover img.back{
-    display: block;
-  }
-}
-
 
 /*HEADER SECTION*/
 header{
@@ -147,3 +120,62 @@ nav{
         display: flex;
     }
   }  
+
+  .showcase{
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 75%;
+    margin: auto;
+  }
+}
+
+.col{width: calc((100% - 2rem) / 3);
+}
+
+.card{
+
+  img.back{
+  display: none;
+  }
+
+  &:hover img.front{
+    display: none;
+  }
+
+  &:hover img.back{
+    display: block;
+  }
+
+  .top-card{
+    position: relative;
+
+    .liked{
+      position: absolute;
+      top: 0%;
+      right: 0%;
+      background-color: white;
+      padding: 0.3rem;
+    }
+
+    .badges{
+      display: flex;
+      gap: 5px;
+      position: absolute;
+      bottom: 1.85rem;
+      color: var(--txt-banner);
+
+        .discount{
+          background-color: var(--discount);
+        }
+        .sustainability{
+          background-color: var(--sustainability);
+        }
+    }
+
+  
+  }
+
+
+}
