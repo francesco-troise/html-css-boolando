@@ -72,6 +72,11 @@
   border: 1px dashed black /**/
 }
 
+img{
+  max-width: 100%;
+  vertical-align: middle;
+}
+
 /*END GLOBAL RULES*/
 
 /*UTILITY*/
@@ -98,6 +103,21 @@
 
 .col{width: calc((100% - 2rem) / 3);
 }
+.card{
+
+  img.back{
+  display: none;
+  }
+
+  &:hover img.front{
+    display: none;
+  }
+
+  &:hover img.back{
+    display: block;
+  }
+}
+
 
 /*HEADER SECTION*/
 header{
