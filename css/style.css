@@ -34,7 +34,7 @@
   align-content: space-between; 
 }
 
-.debug main .container .card{
+.debug main .container .col{
 
     background-color: yellow;
     width: 30%;
@@ -86,16 +86,17 @@
     display: flex;
 }
 
-
-.container{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  width: 75%;
-  margin: auto;
+.showcase{
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 75%;
+    margin: auto;
+  }
 }
 
-.card{width: calc((100% - 2rem) / 3);
+.col{width: calc((100% - 2rem) / 3);
 }
 
 /*HEADER SECTION*/
