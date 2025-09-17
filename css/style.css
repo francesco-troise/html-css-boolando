@@ -69,6 +69,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: 1px dashed black /**/
 }
 
 /*END GLOBAL RULES*/
@@ -86,6 +87,17 @@
 }
 
 
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 75%;
+  margin: auto;
+}
+
+.card{width: calc((100% - 2rem) / 3);
+}
+
 /*HEADER SECTION*/
 header{
     background-color: var(--banner-logo) ;
@@ -93,10 +105,13 @@ header{
 }
 
 nav{
+    width: 75%;
     display: flex; 
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: auto;
     color: var( --txt-banner) ;
+    
     
 
     ul, a{
@@ -109,5 +124,5 @@ nav{
         
     ul{
         display: flex;
-    }  
-}
+    }
+  }  
