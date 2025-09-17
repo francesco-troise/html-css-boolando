@@ -56,8 +56,58 @@
 
 /*END DEBUG MODE*/
 
+/*GLOBAL RULES*/
+:root{
+    --txt-banner: #FFFFFF;
+    --discount: #FF0000;
+    --sustainability: #008000;
+    --banner-logo: #FF6900;
+}
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/*END GLOBAL RULES*/
+
+/*UTILITY*/
+
+.list-unstyled{
+    list-style: none;
+
+    
+}
+
+.d-flex{
+    display: flex;
+}
+
+
+/*HEADER SECTION*/
+header{
+    background-color: var(--banner-logo) ;
+    
+}
+
+nav{
+    display: flex; 
+    align-items: center;
+    justify-content: space-around;
+    color: var( --txt-banner) ;
+    
+
+    ul, a{
+        text-decoration: none;
+        color: inherit;
+        gap: 0.5rem;
+        
+    }
+
+        
+    ul{
+        display: flex;
+    }  
 }
