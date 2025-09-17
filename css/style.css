@@ -1,0 +1,63 @@
+/*DEBUG MODE*/
+
+.debug * {
+  border: dashed 1px black;
+}
+
+.debug header {
+  background-color: pink;
+  height: 100px;
+}
+
+.debug header .container {
+  background-color: red;
+  width: 75%;
+  height: 100%;
+  margin: auto;
+}
+
+
+.debug main {
+  background-color: yellowgreen;
+  height: 550px;
+}
+
+.debug main .container {
+  display: flex;
+  background-color: aqua;
+  width: 75%;
+  height: 100%;
+  margin: auto;
+  padding: 1rem;;
+  flex-wrap: wrap;          
+  justify-content: space-between; 
+  align-content: space-between; 
+}
+
+.debug main .container .card{
+
+    background-color: yellow;
+    width: 30%;
+    height: 40%;
+    
+}
+
+.debug footer {
+  background-color: gray;
+  height: 125px;
+}
+
+.debug footer .container {
+  background-color: slateblue;
+  height: 100%;
+  width: 75%;
+  margin: auto;
+}
+
+/*END DEBUG MODE*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
