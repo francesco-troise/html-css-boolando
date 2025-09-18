@@ -28,18 +28,19 @@
   width: 75%;
   height: 100%;
   margin: auto;
-  padding: 1rem;;
-  flex-wrap: wrap;          
-  justify-content: space-between; 
-  align-content: space-between; 
+  padding: 1rem;
+  ;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
 }
 
-.debug main .container .col{
+.debug main .container .col {
 
-    background-color: yellow;
-    width: 30%;
-    height: 40%;
-    
+  background-color: yellow;
+  width: 30%;
+  height: 40%;
+
 }
 
 .debug footer {
@@ -57,23 +58,28 @@
 /*END DEBUG MODE*/
 
 /*GLOBAL RULES*/
-:root{
-    --txt-banner: #FFFFFF;
-    --discount: #FF0000;
-    --sustainability: #008000;
-    --banner-logo: #FF6900;
-    --txt-brand: #534f4f;
+:root {
+  --txt-banner-logo: #FFFFFF;
+  --discount: #FF0000;
+  --sustainability: #008000;
+  --banner-logo: #FF6900;
+  --txt-brand: #534f4f;
+  --banner-footer: #0D0D0D;
 }
 
-  
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
- /* border: 1px dashed black */
+  /* border: 1px dashed black */
 }
 
-img{
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
   max-width: 100%;
   vertical-align: middle;
 }
@@ -83,17 +89,18 @@ img{
 
 /*UTILITY*/
 
-.list-unstyled{
-    list-style: none;
+.list-unstyled {
+  list-style: none;
+  gap: 0.5rem;
 
-    
+
 }
 
-.d-flex{
-    display: flex;
+.d-flex {
+  display: flex;
 }
 
-.container{
+.container {
   width: 75%;
   margin: auto;
 }
@@ -103,69 +110,71 @@ img{
 
 /*HEADER SECTION*/
 
-header{
-    background-color: var(--banner-logo) ;
-    
+header {
+  background-color: var(--banner-logo);
+
 }
 
-nav{
-    width: 75%;
-    display: flex; 
-    align-items: center;
-    justify-content: space-between;
-    margin: auto;
-    color: var( --txt-banner) ;
-    
-    
+nav {
+  width: 75%;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  color: var(--txt-banner-logo);
 
-    ul, a{
-        text-decoration: none;
-        color: inherit;
-        gap: 0.5rem;
-        
-    }
 
-        
-    ul{
-        display: flex;
+
+  ul {
+    display: flex;
+
+
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      gap: 0.5rem;
+
     }
-  }  
+  }
+}
 
 /*END HEADER SECTION*/
 
 
 /*MAIN SECTION*/
 
-.showcase{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    padding: 2rem 0;
-  }
-
-
-.col{width: calc((100% - 2rem) / 3);
+.showcase {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem 0;
+  row-gap: 2rem;
 }
 
-.card{
-  
 
-  img.back{
-  display: none;
-  }
+.col {
+  width: calc((100% - 2rem) / 3);
+}
 
-  &:hover img.front{
+.card {
+
+
+  img.back {
     display: none;
   }
 
-  &:hover img.back{
+  &:hover img.front {
+    display: none;
+  }
+
+  &:hover img.back {
     display: block;
   }
 
-  .top-card{
+  .top-card {
     position: relative;
 
-    .liked{
+    .liked {
       position: absolute;
       top: 0.5rem;
       right: 0%;
@@ -173,38 +182,89 @@ nav{
       padding: 0.3rem;
     }
 
-    .badges{
+    .badges {
       display: flex;
       gap: 5px;
       position: absolute;
       bottom: 1.85rem;
       color: var(--txt-banner);
 
-        .discount{
-          background-color: var(--discount);
-        }
-        .sustainability{
-          background-color: var(--sustainability);
-        }
+      .discount {
+        background-color: var(--discount);
+      }
+
+      .sustainability {
+        background-color: var(--sustainability);
+      }
     }
 
-  
+
   }
 
-  .bottom-card{
-    .price{
+  .bottom-card {
+    .price {
       color: var(--discount);
     }
 
-    .old-price{
+    .old-price {
       text-decoration: line-through;
     }
 
-    .brand{
+    .brand {
       color: var(--txt-brand);
 
     }
   }
 
 
+}
+
+/*END MAIN SECTION*/
+
+/*FOOTER SECTION*/
+
+footer {
+  background-color: var(--banner-footer);
+
+}
+
+.azienda {
+  font-size: medium;
+}
+
+.legal-info {
+  gap: 1rem;
+}
+
+.legal-info>li {
+  list-style: none;
+  font-size: smaller;
+}
+
+.bot-nav {
+  margin: 0%;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.social {
+
+  background-color: black;
+  gap: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin-left: auto;
+
+}
+
+.social i {
+  color: black;
+  background-color: white;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  font-size: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
