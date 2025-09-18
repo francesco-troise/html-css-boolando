@@ -79,6 +79,7 @@ img{
 
 /*END GLOBAL RULES*/
 
+
 /*UTILITY*/
 
 .list-unstyled{
@@ -91,8 +92,11 @@ img{
     display: flex;
 }
 
+/*END UTILITY*/
+
 
 /*HEADER SECTION*/
+
 header{
     background-color: var(--banner-logo) ;
     
@@ -121,15 +125,19 @@ nav{
     }
   }  
 
-  .showcase{
-  .container{
+/*END HEADER SECTION*/
+
+
+/*MAIN SECTION*/
+
+.showcase .container{
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     width: 75%;
     margin: auto;
   }
-}
+
 
 .col{width: calc((100% - 2rem) / 3);
 }
@@ -153,7 +161,7 @@ nav{
 
     .liked{
       position: absolute;
-      top: 0%;
+      top: 0.5rem;
       right: 0%;
       background-color: white;
       padding: 0.3rem;
@@ -175,6 +183,16 @@ nav{
     }
 
   
+  }
+
+  .bottom-card{
+    .price{
+      color: var(--discount);
+    }
+
+    .old-price{
+      text-decoration: line-through;
+    }
   }
 
 
