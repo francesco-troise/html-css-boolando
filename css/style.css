@@ -62,14 +62,15 @@
     --discount: #FF0000;
     --sustainability: #008000;
     --banner-logo: #FF6900;
+    --txt-brand: #534f4f;
 }
 
-
+  
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px dashed black /**/
+ /* border: 1px dashed black */
 }
 
 img{
@@ -90,6 +91,11 @@ img{
 
 .d-flex{
     display: flex;
+}
+
+.container{
+  width: 75%;
+  margin: auto;
 }
 
 /*END UTILITY*/
@@ -130,12 +136,11 @@ nav{
 
 /*MAIN SECTION*/
 
-.showcase .container{
+.showcase{
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    width: 75%;
-    margin: auto;
+    padding: 2rem 0;
   }
 
 
@@ -143,6 +148,7 @@ nav{
 }
 
 .card{
+  
 
   img.back{
   display: none;
@@ -192,6 +198,11 @@ nav{
 
     .old-price{
       text-decoration: line-through;
+    }
+
+    .brand{
+      color: var(--txt-brand);
+
     }
   }
 
